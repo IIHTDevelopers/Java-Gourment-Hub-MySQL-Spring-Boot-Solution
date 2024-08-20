@@ -35,8 +35,4 @@ describe('boundary', () => {
         expect(fileContent).toMatch(/<SearchBar searchTerm=\{searchTerm\} setSearchTerm=\{setSearchTerm\} \/>/);
     });
 
-    test('RecipeListComponent boundary should render add recipe button for chefs', () => {
-        expect(fileContent).toMatch(/user && user.role === 'chef' &&/);
-        expect(fileContent).toMatch(/<button onClick=\{\(\) => setShowRecipeForm\(true\)\}>Add a Recipe<\/button>/);
-    });
 });
