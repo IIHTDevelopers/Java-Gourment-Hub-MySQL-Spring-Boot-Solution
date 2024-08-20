@@ -75,7 +75,7 @@
     },
     {
       "userId": 2,
-      "recipeIds": [4, 2],
+      "recipeIds": [4],
       "id": 2
     }
   ],
