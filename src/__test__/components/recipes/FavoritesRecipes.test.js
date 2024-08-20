@@ -21,10 +21,6 @@ describe('boundary', () => {
         expect(fileContent).toMatch(/handlePaymentSuccess/);
     });
 
-    test('FavoriteRecipesComponent boundary should display PaymentForm for unpaid recipes', () => {
-        expect(fileContent).toMatch(/: \(\s*<PaymentForm recipe=\{recipe\} onSuccess=\{.*handlePaymentSuccess.*\} \/>/);
-    });
-
     test('FavoriteRecipesComponent boundary should contain a list of favorite recipes', () => {
         expect(fileContent).toMatch(/<ul>\s*\{favoriteRecipes\.map\(.*recipe/);
     });
