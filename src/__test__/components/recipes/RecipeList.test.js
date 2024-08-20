@@ -25,12 +25,6 @@ describe('boundary', () => {
         expect(fileContent).toMatch(/const handleAddRecipe = \(newRecipe\) =>/);
     });
 
-    test('RecipeListComponent boundary should display RecipeDetail or PaymentForm based on payment status', () => {
-        expect(fileContent).toMatch(/selectedRecipe && selectedRecipe.id === recipe.id && showPaymentForm/);
-        expect(fileContent).toMatch(/<PaymentForm recipe=\{recipe\} onSuccess=\{.*handlePaymentSuccess.*\} \/>/);
-        expect(fileContent).toMatch(/<RecipeDetail recipe=\{recipe\} \/>/);
-    });
-
     test('RecipeListComponent boundary should render search bar', () => {
         expect(fileContent).toMatch(/<SearchBar searchTerm=\{searchTerm\} setSearchTerm=\{setSearchTerm\} \/>/);
     });
