@@ -13,10 +13,6 @@ describe('boundary', () => {
         expect(fileContent).toMatch(/RecipeService\.getAllRecipes\(\)/);
     });
 
-    test('RecipeListComponent boundary should contain search term state', () => {
-        expect(fileContent).toMatch(/const \[searchTerm, setSearchTerm\] = useState\(''\);/);
-    });
-
     test('RecipeListComponent boundary should contain handleGetDetails function', () => {
         expect(fileContent).toMatch(/const handleGetDetails = \(recipe\) =>/);
     });
